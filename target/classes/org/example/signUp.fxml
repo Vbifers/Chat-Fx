@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1faee9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SignUpController">
+    <children>
+        <AnchorPane layoutY="96.0" prefHeight="304.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="signUpFirstName" layoutX="185.0" layoutY="16.0" prefHeight="25.0" prefWidth="229.0" promptText="first name" style="-fx-border-color: #1faee9;" />
+                <Button fx:id="signUpButton" layoutX="269.0" layoutY="252.0" mnemonicParsing="false" style="-fx-background-color: #1faee9;" text="Sign up">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="signUpLastName" layoutX="185.0" layoutY="57.0" prefHeight="25.0" prefWidth="229.0" promptText="last name" style="-fx-border-color: #1faee9;" />
+            <PasswordField fx:id="signUpPassword" layoutX="185.0" layoutY="141.0" prefHeight="25.0" prefWidth="229.0" promptText="password" style="-fx-border-color: #1faee9;" />
+            <RadioButton fx:id="signUpMale" layoutX="245.0" layoutY="222.0" mnemonicParsing="false" selected="true" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="signUpFemale" layoutX="302.0" layoutY="222.0" mnemonicParsing="false" text="Female" toggleGroup="$Gender" />
+            <TextField fx:id="signUpLogin" layoutX="185.0" layoutY="99.0" prefHeight="25.0" prefWidth="229.0" promptText="login" style="-fx-border-color: #1faee9;" />
+            <TextField fx:id="signUpCountry" layoutX="185.0" layoutY="184.0" prefHeight="25.0" prefWidth="229.0" promptText="country" style="-fx-border-color: #1faee9;" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="247.0" layoutY="29.0" text="TeleApp" textOverrun="WORD_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
